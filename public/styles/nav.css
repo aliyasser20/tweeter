@@ -1,0 +1,12 @@
+nav {
+  height: 120px;
+  width: 100vw;
+  z-index: 500;
+  background-color: #4056a1;
+  color: white;
+  padding: 1.5em;
+}
+
+nav > span {
+  font-family: "Bungee", cursive, sans-serif;
+}
