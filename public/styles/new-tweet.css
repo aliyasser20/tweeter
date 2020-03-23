@@ -1,0 +1,49 @@
+.new-tweet > h2 {
+  cursor: default;
+}
+
+.new-tweet > form > label,
+.new-tweet > form > textarea {
+  width: 100%;
+}
+
+.new-tweet > form > label {
+  font-weight: 600;
+}
+
+.new-tweet > form > textarea {
+  background-color: inherit;
+  border: none;
+  border-bottom: 4px solid #555149;
+  margin: 20px 0 10px 0;
+  resize: none;
+  height: 50px;
+}
+
+.new-tweet > form > textarea:focus {
+  outline: none;
+}
+
+.new-tweet > form > button,
+.counter {
+  font-family: "Bungee", sans-serif;
+}
+
+.new-tweet > form > button {
+  background-color: #4056a1;
+  color: #ffffff;
+  padding: 0.3em 0.6em;
+  font-size: 0.85em;
+  cursor: pointer;
+  border: none;
+}
+
+.new-tweet > form > button:hover {
+  background-color: #2e3f76;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.counter {
+  float: right;
+  padding-top: 0.15em;
+}

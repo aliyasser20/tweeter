@@ -1,0 +1,13 @@
+header {
+  position: absolute;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  border: solid 1px green;
+  background-color: #00ff13;
+  background-image: url(../images/cartographer.png);
+  color: #ffffff;
+}
