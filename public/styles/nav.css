@@ -6,10 +6,60 @@ nav {
   width: 100vw;
   z-index: 500;
   background-color: #4056a1;
-  color: #ffffff;
   padding: 1.5em;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav > span {
+.title-nav {
   font-family: "Bungee", cursive, sans-serif;
+  font-size: 1.2em;
+  cursor: default;
+}
+
+.new-tweet-nav {
+  height: 100%;
+  background-color: inherit;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.new-tweet-nav:hover {
+  color: rgb(255, 217, 0);
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.new-tweet-nav > svg {
+  margin-top: 10px;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 70px;
+  animation-name: new-tweet-arrow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.new-tweet-nav:hover > svg {
+  stroke: rgb(255, 217, 0);
+}
+
+@keyframes new-tweet-arrow {
+  to {
+    margin-top: 15px;
+  }
 }

@@ -6,8 +6,22 @@ header {
   display: grid;
   align-content: center;
   justify-items: center;
-  border: solid 1px green;
-  background-color: #00ff13;
-  background-image: url(../images/cartographer.png);
+  justify-content: center;
+  align-items: end;
+  background-color: #6c1f80;
+  background-image: url(../images/diamond-upholstery.png);
   color: #ffffff;
+  grid-template-rows: 3fr 1fr;
+}
+
+.name-header {
+  padding-bottom: 5px;
+}
+
+.name-header > span {
+  font-weight: 400;
+}
+
+.profile-hex {
+  width: 210px;
 }

@@ -17,8 +17,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: rgb(33, 33, 33);
+  background-color: #ffffff;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }
