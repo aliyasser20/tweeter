@@ -17,7 +17,9 @@
   border-bottom: 4px solid rgb(33, 33, 33);
   margin: 20px 0 10px 0;
   resize: none;
-  height: 50px;
+  height: 70px;
+  font-size: 0.9em;
+  line-height: 1.5em;
   color: rgb(63, 63, 63);
 }
 
@@ -49,4 +51,8 @@
   float: right;
   padding-top: 0.15em;
   color: #6c1f80;
+}
+
+.counter.over {
+  color: red;
 }
