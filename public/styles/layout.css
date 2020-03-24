@@ -17,7 +17,7 @@ html {
  */
 
 body {
-  color: rgb(33, 33, 33);
+  color: var(--color_5);
   background-color: #ffffff;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
@@ -29,6 +29,11 @@ body {
 
 :root {
   --color_1: #9caff0;
+  --color_2: #6c1f80;
+  --color_3: #4056a1;
+  --color_4: rgb(255, 217, 0);
+  --color_5: rgb(33, 33, 33);
+  --color_6: rgb(63, 63, 63);
 }
 
 body > main {

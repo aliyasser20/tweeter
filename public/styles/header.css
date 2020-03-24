@@ -8,7 +8,7 @@ body > header {
   justify-items: center;
   justify-content: center;
   align-items: end;
-  background-color: #6c1f80;
+  background-color: var(--color_2);
   background-image: url(../images/diamond-upholstery.png);
   color: #ffffff;
   grid-template-rows: 3fr 1fr;
