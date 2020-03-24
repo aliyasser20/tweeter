@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.tweet header {
+  padding-top: 10px;
+}
+
 .tweet footer {
   font-size: 0.75em;
   padding: 0 10px 10px;
@@ -38,7 +42,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
   padding-left: 20px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: var(--color_2);
 }
 
@@ -49,11 +53,12 @@
 
 .tweet-content {
   border-bottom: 4px solid var(--color_5);
-  height: 95px;
-  padding-top: 20px;
+  height: 85px;
+  padding-top: 10px;
   padding-left: 10px;
   font-size: 0.9em;
   line-height: 1.5em;
+  overflow: auto;
 }
 
 .username {
