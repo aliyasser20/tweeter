@@ -7,9 +7,9 @@
 import characterCounter from "./composer-char-counter.js";
 
 // Function to run when page is ready
-const ready = () => {
+const onReady = () => {
   characterCounter();
 };
 
 // Run when page is ready
-$(document).ready(ready);
+$(document).ready(onReady);
