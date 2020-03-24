@@ -27,10 +27,19 @@ body {
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 
-main {
+:root {
+  --color_1: #9caff0;
+}
+
+body > main {
   width: 90%;
   background-color: inherit;
   position: absolute;
   top: 520px;
   left: 5%;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
