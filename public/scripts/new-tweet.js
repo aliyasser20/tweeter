@@ -1,3 +1,5 @@
+import { loadTweets } from "./tweets.js";
+
 // Function handling new tweet submission
 const newTweetHandler = () => {
   $(".new-tweet-form").on("submit", function(e) {
@@ -7,7 +9,6 @@ const newTweetHandler = () => {
     // text area input by user
     const tweetInput = $("#tweet-text").val();
     
-    console.log(tweetInput.length);
     // post if validation passes, otherwise display error message
     if (tweetInput && tweetInput.length > 0 && tweetInput.length <= 140) {
       // AJAX POST request
@@ -16,7 +17,16 @@ const newTweetHandler = () => {
         url: "/tweets",
         data: $(this).serialize()
       })
-        .then(console.log("posted"));
+        .then(() => {
+          // empty text area
+          $("#tweet-text").val("");
+
+          // blur out of form button
+          $(".new-tweet-form button").blur();
+
+          // load tweets again
+          loadTweets();
+        });
     } else {
       tweetInput.length === 0 ? alert("Error: Field can not be empty!") : alert("Error: Tweet is too long!");
     }
