@@ -9,6 +9,10 @@ export const ageCalc = (dateMs) => {
   const ageInMonths = Math.abs(dateFns.differenceInMonths(currentDate, comparedDate));
   const ageInYears = Math.abs(dateFns.differenceInYears(currentDate, comparedDate));
 
+  // Age is less than 1 min
+  if (!ageInMins) {
+    return "less than a minute ago";
+  }
   // Age is less than 1 hour => age in mins
   if (ageInMins < 60) {
     if (ageInMins === 1) {

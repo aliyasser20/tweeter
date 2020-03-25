@@ -39,11 +39,10 @@ module.exports = {
     const avatarArray = avatars[gender];
     const userAvatar = avatarArray[Math.floor(Math.random() * avatarArray.length)];
   
-
     return {
       name: userName,
       handle: userHandle,
-      avatar: userAvatar
+      avatar: userAvatar,
     };
   }
 };

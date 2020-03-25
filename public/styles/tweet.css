@@ -59,6 +59,7 @@
   font-size: 0.9em;
   line-height: 1.5em;
   overflow: auto;
+  overflow-wrap: break-word;
 }
 
 .username {
