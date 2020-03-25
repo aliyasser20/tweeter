@@ -53,7 +53,7 @@ const createTweetElement = (tweetObj) => {
 // Function thats loops through tweets and renders them to page
 const renderTweets = (tweets) => {
   $("#tweets").empty();
-  tweets.forEach(tweet =>  $("#tweets").append(createTweetElement(tweet)));
+  tweets.forEach(tweet =>  $("#tweets").prepend(createTweetElement(tweet)));
 };
 
 // Function that prevents code injection

@@ -56,3 +56,26 @@
 .counter.over {
   color: red;
 }
+
+.error-container {
+  width: 100%;
+  background-color: rgb(201, 7, 7);
+  color: white;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  height: 50px;
+  align-items: center;
+  display: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  word-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.error-container svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  margin-right: 20px;
+}

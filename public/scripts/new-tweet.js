@@ -18,17 +18,42 @@ const newTweetHandler = () => {
         data: $(this).serialize()
       })
         .then(() => {
+          // slide up any error message
+          $(".error-container").slideUp("fast");
+
           // empty text area
           $("#tweet-text").val("");
 
-          // blur out of form button
-          $(".new-tweet-form button").blur();
+          // reset counter
+          $(".counter").val("140");
 
           // load tweets again
           loadTweets();
+
+          // blur out of form button
+          $(".new-tweet-form button").blur();
         });
     } else {
-      tweetInput.length === 0 ? alert("Error: Field can not be empty!") : alert("Error: Tweet is too long!");
+      // error message depending on case
+      const message = `Error: ${tweetInput.length === 0 ? "Field can not be empty!" : "Tweet is too long!"}`;
+     
+      // hide message for error change case
+      $(".error-container").hide();
+
+      // slide down error message
+      $(".error-container").slideDown({
+        duration: "fast",
+        start: function() {
+          $(this).css({
+            display: "flex"
+          });
+        }
+      });
+
+      $(".error-container p").text(message);
+
+      // blur out of form button
+      $(".new-tweet-form button").blur();
     }
   });
 };
