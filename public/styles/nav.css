@@ -30,7 +30,12 @@ nav {
   cursor: pointer;
 }
 
-.new-tweet-nav:hover {
+.new-tweet-nav:focus {
+  outline: none;
+}
+
+.new-tweet-nav:hover,
+.new-tweet-nav.active {
   color: var(--color_4);
 }
 
@@ -54,8 +59,13 @@ nav {
   animation-timing-function: ease-in-out;
 }
 
-.new-tweet-nav:hover > svg {
+.new-tweet-nav:hover > svg,
+.new-tweet-nav.active > svg {
   stroke: var(--color_4);
+}
+
+.new-tweet-nav.active > svg {
+  animation: none;
 }
 
 @keyframes new-tweet-arrow {

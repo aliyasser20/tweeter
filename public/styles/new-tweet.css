@@ -1,3 +1,8 @@
+.new-tweet {
+  display: none;
+  width: 100%;
+}
+
 .new-tweet > h2 {
   cursor: default;
 }

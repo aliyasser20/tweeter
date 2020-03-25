@@ -1,4 +1,5 @@
 import { loadTweets } from "./tweets.js";
+import { displayHideNewTweet } from "./nav.js";
 
 // Function handling new tweet submission
 const newTweetHandler = () => {
@@ -18,20 +19,11 @@ const newTweetHandler = () => {
         data: $(this).serialize()
       })
         .then(() => {
-          // slide up any error message
-          $(".error-container").slideUp("fast");
-
-          // empty text area
-          $("#tweet-text").val("");
-
-          // reset counter
-          $(".counter").val("140");
+          // hide new tweet form on submission
+          displayHideNewTweet();
 
           // load tweets again
           loadTweets();
-
-          // blur out of form button
-          $(".new-tweet-form button").blur();
         });
     } else {
       // error message depending on case
