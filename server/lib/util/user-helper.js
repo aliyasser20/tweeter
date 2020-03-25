@@ -27,10 +27,12 @@ module.exports = {
       userHandle += suffix;
     }
    
+    const imagesDirec = "../images/";
+
     const avatars = {
     
-      Female: ["https://i.imgur.com/nlhLi3I.png","https://i.imgur.com/z5LNkkB.png","https://i.imgur.com/v0JXau2.png","https://i.imgur.com/lRUnDgU.png", "https://i.imgur.com/3GvwNBf.png"],
-      Male: ["https://i.imgur.com/73hZDYK.png","https://i.imgur.com/5fUVPRP.png","https://i.imgur.com/DVpDmdR.png","https://i.imgur.com/2WZtOD6.png", "https://i.imgur.com/ilT4JDe.png"]
+      Female: [`${imagesDirec}woman-1.png`,`${imagesDirec}woman-2.png`,`${imagesDirec}woman-3.png`,`${imagesDirec}woman-4.png`, `${imagesDirec}woman-5.png`],
+      Male: [`${imagesDirec}man-1.png`,`${imagesDirec}man-2.png`,`${imagesDirec}man-3.png`,`${imagesDirec}man-4.png`, `${imagesDirec}man-5.png`],
     
     };
     
@@ -41,7 +43,7 @@ module.exports = {
     return {
       name: userName,
       handle: userHandle,
-      avatars: userAvatar
+      avatar: userAvatar
     };
   }
 };

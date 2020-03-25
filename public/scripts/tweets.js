@@ -38,6 +38,19 @@ const createTweetElement = (tweetObj) => {
 };
 
 // Function thats loops through tweets and renders them to page
-export const renderTweets = (tweets) => {
+const renderTweets = (tweets) => {
   tweets.forEach(tweet =>  $("#tweets").append(createTweetElement(tweet)));
+};
+
+// Function that loads tweets and then calls render function
+export const loadTweets = () => {
+  // AJAX GET request
+  $.ajax({
+    method: "GET",
+    url: "/tweets",
+  })
+    .then((resp) => {
+      // On request success call render function
+      renderTweets(resp);
+    });
 };

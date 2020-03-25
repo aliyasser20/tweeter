@@ -2,7 +2,7 @@
   {
     "user": {
       "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
+      "avatar": "../images/man-1.png",
       "handle": "@SirIsaac"
     },
     "content": {
@@ -13,7 +13,7 @@
   {
     "user": {
       "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
+      "avatar": "../images/woman-1.png",
       "handle": "@rd"
     },
     "content": {
