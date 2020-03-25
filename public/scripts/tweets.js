@@ -1,6 +1,19 @@
 import { flagIcon, retweetIcon, likeIcon } from "./svgIcons.js";
 import { ageCalc } from "./helpers.js";
 
+// Function that loads tweets and then calls render function
+export const loadTweets = () => {
+  // AJAX GET request
+  $.ajax({
+    method: "GET",
+    url: "/tweets",
+  })
+    .then((resp) => {
+      // On request success call render function
+      renderTweets(resp);
+    });
+};
+
 // Function that creates and returns single tweet element
 const createTweetElement = (tweetObj) => {
   // Create tweet element
@@ -16,7 +29,7 @@ const createTweetElement = (tweetObj) => {
         <p class="username">${tweetObj.user.handle}</p>
       </header>
       <main>
-        <p class="tweet-content">${tweetObj.content.text}</p>
+        <p class="tweet-content">${escape(tweetObj.content.text)}</p>
       </main>
       <footer>
         <p class="age">${ageCalc(tweetObj.created_at)}</p>
@@ -43,15 +56,10 @@ const renderTweets = (tweets) => {
   tweets.forEach(tweet =>  $("#tweets").append(createTweetElement(tweet)));
 };
 
-// Function that loads tweets and then calls render function
-export const loadTweets = () => {
-  // AJAX GET request
-  $.ajax({
-    method: "GET",
-    url: "/tweets",
-  })
-    .then((resp) => {
-      // On request success call render function
-      renderTweets(resp);
-    });
+// Function that prevents code injection
+const escape = (str) => {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
 };
+
