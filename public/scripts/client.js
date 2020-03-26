@@ -9,7 +9,7 @@ const onReady = () => {
   // Load navigation items handler
   navHandler();
 
-  // Load composer
+  // Load secondary
   secondary();
 
   // Load new tweet character counter
