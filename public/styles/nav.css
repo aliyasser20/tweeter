@@ -8,19 +8,26 @@ nav {
   background-color: var(--color_3);
   padding: 1.5em;
   color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.title-nav {
+nav .title-nav {
   font-family: "Bungee", cursive, sans-serif;
   font-size: 1.2em;
   cursor: default;
 }
 
-.new-tweet-nav {
+nav .new-tweet-nav {
   height: 100%;
   background-color: inherit;
   border: none;
@@ -30,20 +37,11 @@ nav {
   cursor: pointer;
 }
 
-.new-tweet-nav:focus {
-  outline: none;
-}
-
-.new-tweet-nav:hover,
-.new-tweet-nav.active {
-  color: var(--color_4);
-}
-
-.thin {
+nav .new-tweet-nav .thin {
   font-weight: 300;
 }
 
-.new-tweet-nav > svg {
+nav .new-tweet-nav svg {
   margin-top: 10px;
   width: 18px;
   height: 18px;
@@ -52,20 +50,41 @@ nav {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 70px;
-  animation-name: new-tweet-arrow;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-name: new-tweet-arrow;
+          animation-name: new-tweet-arrow;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
-.new-tweet-nav:hover > svg,
-.new-tweet-nav.active > svg {
+nav .new-tweet-nav:focus {
+  outline: none;
+}
+
+nav .new-tweet-nav:hover,
+nav .new-tweet-nav.active {
+  color: var(--color_4);
+}
+
+nav .new-tweet-nav:hover svg,
+nav .new-tweet-nav.active svg {
   stroke: var(--color_4);
 }
 
-.new-tweet-nav.active > svg {
-  animation: none;
+nav .new-tweet-nav.active > svg {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes new-tweet-arrow {
+  to {
+    margin-top: 15px;
+  }
 }
 
 @keyframes new-tweet-arrow {
@@ -73,3 +92,4 @@ nav {
     margin-top: 15px;
   }
 }
+/*# sourceMappingURL=nav.css.map */

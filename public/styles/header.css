@@ -3,25 +3,33 @@ body > header {
   top: 120px;
   height: 400px;
   width: 100%;
+  display: -ms-grid;
   display: grid;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   justify-items: center;
-  justify-content: center;
-  align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   background-color: var(--color_2);
   background-image: url(../images/diamond-upholstery.png);
   color: #ffffff;
-  grid-template-rows: 3fr 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
 }
 
-.name-header {
+body > header .name-header {
   padding-bottom: 5px;
 }
 
-.name-header > span {
+body > header .name-header span {
   font-weight: 400;
 }
 
-.profile-hex {
+body > header .profile-hex {
   width: 210px;
 }
+/*# sourceMappingURL=header.css.map */

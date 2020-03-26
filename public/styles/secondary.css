@@ -12,14 +12,9 @@
   opacity: 0.9;
 }
 
-.scroll-up:hover {
-  background-color: var(--color_2);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-
 .scroll-up svg {
-  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
   fill: none;
   stroke: white;
   stroke-linecap: round;
@@ -29,6 +24,14 @@
   height: 20px;
 }
 
+.scroll-up:hover {
+  background-color: var(--color_2);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
 .scroll-up.hidden {
   display: none;
 }
+/*# sourceMappingURL=secondary.css.map */

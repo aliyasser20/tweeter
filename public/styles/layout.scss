@@ -1,0 +1,46 @@
+:root {
+  --color_1: #e9c5f3;
+  --color_2: #6c1f80;
+  --color_3: #4056a1;
+  --color_4: rgb(255, 217, 0);
+  --color_5: rgb(33, 33, 33);
+  --color_6: rgb(63, 63, 63);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color_5);
+  background-color: #ffffff;
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+
+  .container {
+    width: 90%;
+    background-color: inherit;
+    position: absolute;
+    top: 520px;
+    left: 5%;
+  }
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+output {
+  cursor: default;
+}

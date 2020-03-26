@@ -1,0 +1,27 @@
+body > header {
+  position: absolute;
+  top: 120px;
+  height: 400px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--color_2);
+  background-image: url(../images/diamond-upholstery.png);
+  color: #ffffff;
+  grid-template-rows: 3fr 1fr;
+
+  .name-header {
+    padding-bottom: 5px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .profile-hex {
+    width: 210px;
+  }
+}
