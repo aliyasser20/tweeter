@@ -3,6 +3,7 @@ export const ageCalc = (dateMs) => {
   const currentDate = new Date();
   const comparedDate = new Date(dateMs);
 
+  // use date-fns to calculate difference in dates
   const ageInMins = Math.abs(dateFns.differenceInMinutes(currentDate, comparedDate));
   const ageInHours = Math.abs(dateFns.differenceInHours(currentDate, comparedDate));
   const ageInDays = Math.abs(dateFns.differenceInDays(currentDate, comparedDate));
