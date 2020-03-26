@@ -31,6 +31,17 @@ body {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  body {
+    .container {
+      top: 120px;
+      left: 500px;
+      width: calc(100% - 500px - 50px);
+      max-width: 1300px;
+    }
+  }
+}
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;

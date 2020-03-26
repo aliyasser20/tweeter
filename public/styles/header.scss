@@ -25,3 +25,15 @@ body > header {
     width: 210px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  body > header {
+    --heightWidth: 400px;
+
+    width: var(--heightWidth);
+    height: var(--heightWidth);
+    position: fixed;
+    top: 170px;
+    left: 50px;
+  }
+}
