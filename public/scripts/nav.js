@@ -1,7 +1,6 @@
 // Function that handles nav items
 export const navHandler = () => {
   $(".new-tweet-nav").on("click", function() {
-    console.log("clicked");
 
     // display or hide new tweet form
     displayHideNewTweet();
